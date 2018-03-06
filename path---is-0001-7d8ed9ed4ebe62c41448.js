@@ -1,0 +1,2 @@
+webpackJsonp([64350763992028],{649:function(e,t){e.exports={data:{markdownRemark:{html:"<p>Pattern: <code>1-3 | 2-4</code></p>",frontmatter:{title:"Interval Sequence 0001 (3rds)",date:"March 05, 2018",path:"/is0001",tags:["sequences","scales","intervals"],excerpt:"1-3 | 2-4 "}}},pathContext:{}}}});
+//# sourceMappingURL=path---is-0001-7d8ed9ed4ebe62c41448.js.map
