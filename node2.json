@@ -1,0 +1,27 @@
+{
+  id:
+    "/Users/fischer/Code/bz-guitar-lib/content/exercises/MS0003.md absPath of file >>> MarkdownRemark",
+  children: [],
+  parent: "/Users/fischer/Code/bz-guitar-lib/content/exercises/MS0003.md absPath of file",
+  internal: {
+    content:
+      "---\npath: '/ms0003'\ntitle: \"Melodic Sequence 0003\"\ninternalId: \"MS0003\"\ndate: \"2018-03-02T18:46:42.662Z\"\ncategory: \"scale sequences\"\ntype: \"exercise\"\ntags:\n    - sequences\n    - scales\n   - melodic    \nexcerpt: \"1-2-7-1 | 2-3-1-2\"\n---\n\nPattern: `1-2-7-1 | 2-3-1-2`\n\n## Example:\n\n<iframe src=\"https://flat.io/embed/5a999d56b98ac16403d824a9?layout=responsive&audioSource=&videoPosition=\" height=\"450\" width=\"700\" frameBorder=\"0\" allowfullscreen></iframe>\n",
+    contentDigest: "d7288bc5b0ad9c8d09bf2544af59ae79",
+    type: "MarkdownRemark",
+    owner: "gatsby-transformer-remark"
+  },
+  frontmatter: {
+    title: "Melodic Sequence 0003",
+    path: "/ms0003",
+    internalId: "MS0003",
+    date: "2018-03-02T18:46:42.662Z",
+    category: "scale sequences",
+    type: "exercise",
+    tags: ["sequences", "scales", "melodic"],
+    excerpt: "1-2-7-1 | 2-3-1-2",
+    _PARENT: "/Users/fischer/Code/bz-guitar-lib/content/exercises/MS0003.md absPath of file",
+    parent: "/Users/fischer/Code/bz-guitar-lib/content/exercises/MS0003.md absPath of file"
+  },
+  excerpt: "",
+  fileAbsolutePath: "/Users/fischer/Code/bz-guitar-lib/content/exercises/MS0003.md"
+}
