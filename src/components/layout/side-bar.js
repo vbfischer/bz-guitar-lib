@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Drawer from 'material-ui/Drawer';
-import { withStyles } from 'material-ui/styles';
+import { withStyles, withTheme } from 'material-ui/styles';
 
-import Link from 'gatsby-link';
-import List, { ListItem, ListItemText, ListSubheader } from 'material-ui/List';
+import Card, { CardHeader, CardContent } from 'material-ui/Card';
+import List, { ListSubheader } from 'material-ui/List';
 import Divider from 'material-ui/Divider';
 import ListIcon from 'material-ui-icons/List';
 import PinDrop from 'material-ui-icons/PinDrop';
@@ -14,49 +13,58 @@ import MenuItem from '../menu-item';
 const drawerWidth = 270;
 
 const styles = theme => ({
-  drawerPaper: {
+  card: {
     position: 'relative',
     width: drawerWidth,
-    height: '100%',
+    height: '90%',
+    margin: '1em',
+    overflow: 'auto',
+  },
+  subheader: {
+    backgroundColor: theme.palette.background.paper,
   },
   toolbar: theme.mixins.toolbar,
 });
 
-class Sidebar extends React.Component {
-  render() {
-    const { classes, tags, categories } = this.props;
-    return (
-      <Drawer
-        elevation={20}
-        variant="permanent"
-        classes={{
-          paper: classes.drawerPaper,
-        }}
+const Sidebar = ({
+  classes, tags, categories, theme,
+}) => (
+  <Card className={classes.card} raised>
+    <CardContent>
+      <List
+        subheader={
+          <ListSubheader component="div" color="primary" className={classes.subheader}>
+            Categories
+          </ListSubheader>
+        }
       >
-        <div className={classes.toolbar} />
-        <List subheader={<ListSubheader component="div">Categories</ListSubheader>}>
-          {categories.map(category => (
-            <MenuItem key={category.id} name={category.name} path={category.path} button>
-              <ListIcon />
-            </MenuItem>
-          ))}
-        </List>
-        <Divider />
-        <List subheader={<ListSubheader component="div">Tags</ListSubheader>}>
-          {tags.map(tag => (
-            <MenuItem key={tag.id} name={tag.name} path={tag.path} itemId={tag.id} button>
-              <PinDrop />
-            </MenuItem>
-          ))}
-        </List>
-        <Divider />
-      </Drawer>
-    );
-  }
-}
+        {categories.map(category => (
+          <MenuItem key={category.id} name={category.name} path={category.path} button>
+            <ListIcon />
+          </MenuItem>
+        ))}
+      </List>
+      <Divider />
+      <List
+        subheader={
+          <ListSubheader component="div" color="primary" className={classes.subheader}>
+            Tags
+          </ListSubheader>
+        }
+      >
+        {tags.map(tag => (
+          <MenuItem key={tag.id} name={tag.name} path={tag.path} itemId={tag.id} button>
+            <PinDrop />
+          </MenuItem>
+        ))}
+      </List>
+      <Divider />
+    </CardContent>
+  </Card>
+);
 
 Sidebar.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(Sidebar);
+export default withTheme()(withStyles(styles)(Sidebar));

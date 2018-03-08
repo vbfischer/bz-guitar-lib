@@ -7,6 +7,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
   const blogPostTemplate = path.resolve('src/templates/exercise-post.js');
   const categoryPageTemplate = path.resolve('src/templates/category-list.js');
+  const tagPageTemplate = path.resolve('src/templates/tag-list.js');
   // If you are experiencing issues with the ordering of the posts on the homepage,
   // replace the `allMarkdownRemark` line below with something like this:
   // allMarkdownRemark(sort:{fields:[frontmatter___date], order: ASC}) {
@@ -55,7 +56,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     tagList.forEach((tag) => {
       createPage({
         path: `/tags/${_.kebabCase(tag)}/`,
-        component: categoryPageTemplate,
+        component: tagPageTemplate,
         context: {
           tag,
         },

@@ -10,26 +10,12 @@ import PostItem from '../components/post-item';
 
 const styles = theme => ({
   card: {
-    margin: '1em',
-    flexGrow: 1,
-    height: '90%',
-    overflow: 'auto',
-    position: 'relative',
-  },
-  cardHeader: {
-    position: 'sticky',
-    top: 0,
-    backgroundColor: theme.palette.background.paper,
-    zIndex: 1,
-    borderBottom: `1px solid ${theme.palette.divider}`,
-  },
-  cardContents: {
-    overflow: 'auto',
+    padding: 0,
   },
   toolbar: theme.mixins.toolbar,
 });
 
-class CategoryTemplate extends React.Component {
+class TagTemplate extends React.Component {
   state = {
     items: [],
   };
@@ -59,33 +45,37 @@ class CategoryTemplate extends React.Component {
 
   render() {
     return (
-      <Card className={this.props.classes.card}>
-        <CardHeader title={this.state.title} className={this.props.classes.cardHeader} />
-        <CardContent className={this.props.classes.cardContents}>
-          <List component="nav">
-            {this.state.items.map(post => (
-              <PostItem key={post.id} item={post} onSelected={id => this.updateActive(id)} />
-            ))}
-          </List>
-        </CardContent>
-      </Card>
+      <div>
+        <div className={this.props.classes.toolbar} />
+        <Card>
+          <CardHeader title={this.state.title} />
+          <Divider />
+          <CardContent>
+            <List component="nav">
+              {this.state.items.map(post => (
+                <PostItem key={post.id} item={post} onSelected={id => this.updateActive(id)} />
+              ))}
+            </List>
+          </CardContent>
+        </Card>
+      </div>
     );
   }
 }
 
-CategoryTemplate.propTypes = {
+TagTemplate.propTypes = {
   data: PropTypes.object.isRequired,
   classes: PropTypes.object.isRequired,
   pathContext: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(CategoryTemplate);
+export default withStyles(styles)(TagTemplate);
 
 export const query = graphql`
-  query CategoryPage($category: String) {
+  query TagPage($tag: String) {
     allMarkdownRemark(
       sort: { fields: [frontmatter___internalId], order: ASC }
-      filter: { frontmatter: { category: { eq: $category } } }
+      filter: { frontmatter: { tags: { eq: $tag } } }
     ) {
       totalCount
       edges {

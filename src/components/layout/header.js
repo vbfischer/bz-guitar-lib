@@ -15,12 +15,9 @@ const styles = theme => ({
 });
 
 const header = ({ classes }) => (
-  <AppBar position="absolute" className={classes.appBar}>
+  <AppBar>
     <Toolbar>
-      <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
-        <MenuIcon />
-      </IconButton>
-      <Typography variant="title" color="inherit" className={classes.flex}>
+      <Typography variant="title" color="inherit">
         BZ Stuff
       </Typography>
     </Toolbar>

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
-
+import Paper from 'material-ui/Paper';
 import _ from 'lodash';
 
 import withRoot from '../components/withRoot';
@@ -18,6 +18,8 @@ const styles = theme => ({
     position: 'relative',
     display: 'flex',
     height: '100% ',
+    backgroundColor: theme.palette.background.default,
+    marginTop: '3em',
   },
   main: {
     display: 'flex',
@@ -32,8 +34,7 @@ const styles = theme => ({
   },
 });
 
-const TemplateWrapper = (props) => {
-  const { classes, children, data } = props;
+const TemplateWrapper = ({ classes, children, data }) => {
   const tags = _.map(data.tags.edges, tag => ({
     name: tag.node.context.tag,
     path: tag.node.path,
@@ -49,10 +50,10 @@ const TemplateWrapper = (props) => {
   return (
     <div className={classes.root}>
       <Header />
-      <div className={classes.main}>
+      <Paper className={classes.main}>
         <SideBar tags={tags} categories={categories} />
-        <div className={classes.content}>{children()}</div>
-      </div>
+        {children()}
+      </Paper>
     </div>
   );
 };
