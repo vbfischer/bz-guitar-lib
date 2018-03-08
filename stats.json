@@ -13,8 +13,8 @@
       "path---pg-0003-f54383ad1eeaae7faaf2.js.map"
     ],
     "path---tags-paul-gilbert": [
-      "path---tags-paul-gilbert-526e9215fbd32b3b75d8.js",
-      "path---tags-paul-gilbert-526e9215fbd32b3b75d8.js.map"
+      "path---tags-paul-gilbert-856ff998b1f4787d1226.js",
+      "path---tags-paul-gilbert-856ff998b1f4787d1226.js.map"
     ],
     "path---pg-0001": [
       "path---pg-0001-b0a586249b212ac81028.js",
@@ -33,8 +33,8 @@
       "path---pg-0015-5a43042dc7f3e2965340.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-d2a7755fc7bac87a6298.js",
-      "component---src-pages-index-js-d2a7755fc7bac87a6298.js.map"
+      "component---src-pages-index-js-51effdf9d154ddc3e936.js",
+      "component---src-pages-index-js-51effdf9d154ddc3e936.js.map"
     ],
     "path---ms-0001": [
       "path---ms-0001-cd411018acf5a3e046b6.js",
@@ -49,8 +49,8 @@
       "path---ms-0008-e65e6ad0c42322ddc8ab.js.map"
     ],
     "component---src-templates-category-list-js": [
-      "component---src-templates-category-list-js-fcff01b695e7d8352167.js",
-      "component---src-templates-category-list-js-fcff01b695e7d8352167.js.map"
+      "component---src-templates-category-list-js-9ec0b2fe4465020dc0e4.js",
+      "component---src-templates-category-list-js-9ec0b2fe4465020dc0e4.js.map"
     ],
     "path---pg-0011": [
       "path---pg-0011-e04497aebe471b6d793f.js",
@@ -65,8 +65,8 @@
       "path---ts-0003-d62fbdc238d6c0f7e479.js.map"
     ],
     "path---": [
-      "path----6fa27b0ff223d1b686c8.js",
-      "path----6fa27b0ff223d1b686c8.js.map"
+      "path----15fda35fc738c82f6673.js",
+      "path----15fda35fc738c82f6673.js.map"
     ],
     "path---is-0001": [
       "path---is-0001-7d8ed9ed4ebe62c41448.js",
@@ -85,8 +85,8 @@
       "path---as-0009-6a46751c8046ef76ec9f.js.map"
     ],
     "path---tags-melodic": [
-      "path---tags-melodic-7ad1c7699f1ef262d53b.js",
-      "path---tags-melodic-7ad1c7699f1ef262d53b.js.map"
+      "path---tags-melodic-baab08e568521de8ad7a.js",
+      "path---tags-melodic-baab08e568521de8ad7a.js.map"
     ],
     "path---pg-0016": [
       "path---pg-0016-956305dc83f042d2f327.js",
@@ -125,12 +125,12 @@
       "path---ms-0007-ea9ddb6364cad9cd302a.js.map"
     ],
     "path---tags-arpeggio": [
-      "path---tags-arpeggio-d23f032b7a2b2e39899b.js",
-      "path---tags-arpeggio-d23f032b7a2b2e39899b.js.map"
+      "path---tags-arpeggio-2259166a7a953ca97273.js",
+      "path---tags-arpeggio-2259166a7a953ca97273.js.map"
     ],
     "path---tags-pull-off": [
-      "path---tags-pull-off-ed9defd4c3c3bbcb1905.js",
-      "path---tags-pull-off-ed9defd4c3c3bbcb1905.js.map"
+      "path---tags-pull-off-edd394943dae79afdc7e.js",
+      "path---tags-pull-off-edd394943dae79afdc7e.js.map"
     ],
     "path---is-0002": [
       "path---is-0002-75c196681c9f3a1615d1.js",
@@ -153,20 +153,24 @@
       "path---pg-0009-cad7c474be2ff0bcd9c6.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-490f025ea21162ab1d56.js",
-      "component---src-layouts-index-js-490f025ea21162ab1d56.js.map"
+      "component---src-layouts-index-js-f2c0a94946bd658aa08b.js",
+      "component---src-layouts-index-js-f2c0a94946bd658aa08b.js.map"
     ],
     "path---tags-hammer-on": [
-      "path---tags-hammer-on-b72f3125f01006a6545a.js",
-      "path---tags-hammer-on-b72f3125f01006a6545a.js.map"
+      "path---tags-hammer-on-f90e91cc4e9e187ab966.js",
+      "path---tags-hammer-on-f90e91cc4e9e187ab966.js.map"
     ],
     "path---tags-triads": [
-      "path---tags-triads-0e8a8ba17dae4155dce5.js",
-      "path---tags-triads-0e8a8ba17dae4155dce5.js.map"
+      "path---tags-triads-35539c4028c55aaae441.js",
+      "path---tags-triads-35539c4028c55aaae441.js.map"
     ],
     "path---pg-0014": [
       "path---pg-0014-7fa49e039922070af837.js",
       "path---pg-0014-7fa49e039922070af837.js.map"
+    ],
+    "component---src-templates-tag-list-js": [
+      "component---src-templates-tag-list-js-6f7e9d3cff2bd112537f.js",
+      "component---src-templates-tag-list-js-6f7e9d3cff2bd112537f.js.map"
     ],
     "path---ts-0004": [
       "path---ts-0004-3a39aa314e8d395f7c16.js",
@@ -237,8 +241,8 @@
       "path---categories-arpeggio-sequences-b306d329d902a7e322e3.js.map"
     ],
     "commons": [
-      "commons-c50484affe377dbe45a9.js",
-      "commons-c50484affe377dbe45a9.js.map"
+      "commons-26bc87cf0d58b716dc63.js",
+      "commons-26bc87cf0d58b716dc63.js.map"
     ],
     "path---ts-0002": [
       "path---ts-0002-65059a08cca35c574aec.js",
@@ -321,13 +325,13 @@
       "path---pg-0023-ede05b62c901f54626fb.js.map"
     ],
     "path---tags-intervals": [
-      "path---tags-intervals-31167efdb1da01ddce66.js",
-      "path---tags-intervals-31167efdb1da01ddce66.js.map"
+      "path---tags-intervals-e2b7b24720aeeda4f506.js",
+      "path---tags-intervals-e2b7b24720aeeda4f506.js.map"
     ],
     "app": [
-      "app-53388e6fc2fa757097c4.js",
+      "app-ef1bbb8b9d6b035b66b8.js",
       "build-js-styles.css",
-      "app-53388e6fc2fa757097c4.js.map",
+      "app-ef1bbb8b9d6b035b66b8.js.map",
       "build-js-styles.css.map"
     ],
     "path---ts-0001": [
