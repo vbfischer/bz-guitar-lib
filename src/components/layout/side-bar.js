@@ -11,7 +11,7 @@ import PinDrop from 'material-ui-icons/PinDrop';
 
 import MenuItem from '../menu-item';
 
-const drawerWidth = 250;
+const drawerWidth = 270;
 
 const styles = theme => ({
   drawerPaper: {

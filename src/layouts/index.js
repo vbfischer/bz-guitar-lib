@@ -2,9 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
 
-import Card, { CardContent, CardHeader } from 'material-ui/Card';
-import Divider from 'material-ui/Divider';
-import Reboot from 'material-ui/Reboot';
 import _ from 'lodash';
 
 import withRoot from '../components/withRoot';
@@ -33,14 +30,6 @@ const styles = theme => ({
     minWidth: 0, // So the Typography noWrap works
     overflow: 'auto',
   },
-  card: {
-    padding: 0,
-  },
-  exerciseList: {
-    width: '100%',
-    backgroundColor: theme.palette.background.paper,
-  },
-  toolbar: theme.mixins.toolbar,
 });
 
 const TemplateWrapper = (props) => {
@@ -62,14 +51,7 @@ const TemplateWrapper = (props) => {
       <Header />
       <div className={classes.main}>
         <SideBar tags={tags} categories={categories} />
-        <div className={classes.content}>
-          <div className={classes.toolbar} />
-          <Card>
-            <CardHeader title="BZ Guitar Lab Library" />
-            <Divider />
-            <CardContent> {children()}</CardContent>
-          </Card>
-        </div>
+        <div className={classes.content}>{children()}</div>
       </div>
     </div>
   );
@@ -78,6 +60,7 @@ const TemplateWrapper = (props) => {
 TemplateWrapper.propTypes = {
   classes: PropTypes.object,
   children: PropTypes.func,
+  data: PropTypes.object.isRequired,
 };
 
 TemplateWrapper.defaultProps = {
