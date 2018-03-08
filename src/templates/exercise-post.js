@@ -2,22 +2,35 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
+import { withStyles, withTheme } from 'material-ui/styles';
+import Card, { CardHeader, CardContent } from 'material-ui/Card';
+import Divider from 'material-ui/Divider';
 
-const Template = ({ data }) => {
+const styles = theme => ({
+  container: {
+    flexGrow: 1,
+    margin: '1em',
+    height: '90%',
+  },
+  card: {},
+});
+
+const Template = ({ data, classes }) => {
   const { markdownRemark: post } = data;
   const { frontmatter, html } = post;
   const { title, date } = frontmatter;
 
   return (
-    <div>
+    <div className={classes.container}>
       <Helmet title={`${frontmatter.title} - My Blog`} />
 
-      <div>
-        <h1>{title}</h1>
-        <h3>{date}</h3>
-
-        <div dangerouslySetInnerHTML={{ __html: html }} />
-      </div>
+      <Card className={classes.card}>
+        <CardHeader title={title} subheader={date} />
+        <Divider />
+        <CardContent>
+          <div dangerouslySetInnerHTML={{ __html: html }} />
+        </CardContent>
+      </Card>
     </div>
   );
 };
@@ -41,4 +54,4 @@ export const pageQuery = graphql`
   }
 `;
 
-export default Template;
+export default withStyles(styles)(Template);
